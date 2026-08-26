@@ -1,0 +1,29 @@
+generated: '2026-08-26'
+method: searched
+source: registry.npmjs.org, pypi.org, github.com
+package_count: 0
+packages: []
+note: >-
+  Qolab publishes no client libraries or SDKs. Its GitHub organisation,
+  https://github.com/Qolab-Ai (confirmed as Qolab's own — the org's blog field is
+  https://qolab.ai and its description matches the company's own tagline), has 0 public
+  repositories. npm has no "qolab" package (registry.npmjs.org/qolab returned 404).
+  No SDKs pointer is wired into apis.yml.
+namesake_warning: >-
+  DO NOT CLAIM pypi.org/project/qolab FOR THIS COMPANY. A PyPI package named "qolab"
+  (version 0.48) exists but belongs to the quantum-optics lab at the College of William
+  & Mary — its only project URL is http://qo.physics.wm.edu/cgit/qolab.git/about/ and
+  its summary reads "Classes and functions useful for the quantum optics lab: qolab".
+  It predates and is unrelated to Qolab, Inc. (qolab.ai). Likewise
+  github.com/qolab is a different organisation whose blog field is https://qolab.eu/,
+  and the GitHub repo search for "qolab" returns only unrelated academic and personal
+  projects. Every one of these is a name collision, not a Qolab, Inc. artifact.
+evidence:
+- url: https://registry.npmjs.org/qolab
+  status: 404
+- url: https://pypi.org/pypi/qolab/json
+  status: 200
+  note: third-party namesake (William & Mary quantum optics lab), not Qolab, Inc.
+- url: https://github.com/Qolab-Ai
+  status: 200
+  note: Qolab, Inc.'s own GitHub org — 0 public repositories

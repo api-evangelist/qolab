@@ -1,0 +1,25 @@
+generated: '2026-08-26'
+method: searched
+source: https://qolab.ai/product
+plan_count: 0
+note: >-
+  Qolab publishes no pricing page and no plans. Its only product, Qolab Start (a
+  superconducting QPU platform), is sold through a "Request access" form on
+  https://qolab.ai/product that collects name, organization, email, intended use case
+  and deployment interest — there is no list price, no tier table, no quota and no
+  self-serve checkout anywhere on the site. The sitemap
+  (https://qolab.ai/sitemap.xml, HTTP 200) contains 41 URLs and none of them is a
+  pricing, plans, billing or signup page. This is enterprise capital-equipment
+  procurement, not a metered API product.
+deployment_options:
+- name: On-premise
+  description: Installed in the customer's laboratory for full hardware control and device-level experimentation.
+  price: null
+- name: Cloud access
+  description: Remote access to Qolab hardware over secure cloud connectivity with no facility preparation required.
+  price: null
+evidence:
+- url: https://qolab.ai/product
+  status: 200
+- url: https://qolab.ai/sitemap.xml
+  status: 200

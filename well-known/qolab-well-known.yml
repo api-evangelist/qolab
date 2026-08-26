@@ -1,0 +1,44 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every host named in apis.yml
+note: >-
+  Every /.well-known/* path on qolab.ai returned HTTP 404. The Webflow-hosted origin
+  answers the whole /.well-known/ namespace with an identical 88-byte HTML stub reading
+  "Invalid .well-known request", which is a genuine absence and not a routing accident.
+  No WellKnown, APICatalog or SecurityTxt pointer is wired into apis.yml as a result —
+  this file records a measured absence, not a served surface. Qolab has no api.*,
+  docs.* or developer.* host: all three failed DNS resolution (NXDOMAIN) on 2026-08-26.
+hosts:
+- host: qolab.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+unresolved_hosts:
+- host: api.qolab.ai
+  status: '<no response> — DNS NXDOMAIN'
+- host: docs.qolab.ai
+  status: '<no response> — DNS NXDOMAIN'
+- host: developer.qolab.ai
+  status: '<no response> — DNS NXDOMAIN'
