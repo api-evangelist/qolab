@@ -17,6 +17,17 @@ description: 'Qolab, Inc. is a superconducting quantum computing hardware compan
   developer portal, no machine-readable API contract and no self-serve sign-up, and the
   API and control interface guides that ship with Qolab Start are released to customers
   after a Request Access review.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6997406d670814baad5db361/69998f1154fc550d9c79d656_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/qolab/refs/heads/main/apis.yml
 x-type: company
